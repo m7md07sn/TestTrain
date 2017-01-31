@@ -29,6 +29,8 @@ public class TestingTest extends TestCase {
         int a=10,b=20;
         assertEquals(testing.sum(a,b),30);
 
+        ////??????
+
     }
 
     public void testPrintStr() throws Exception {
