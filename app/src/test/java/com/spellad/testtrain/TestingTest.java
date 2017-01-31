@@ -27,11 +27,13 @@ public class TestingTest extends TestCase {
     public void testSum() throws Exception {
 
         int a=10,b=20;
-        assertEquals(testing.sum(a,b),20);
+        assertEquals(testing.sum(a,b),30);
 
     }
 
     public void testPrintStr() throws Exception {
+
+        assertEquals("Hello",testing.printStr());
 
     }
 
