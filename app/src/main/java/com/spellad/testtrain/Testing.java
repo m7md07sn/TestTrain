@@ -9,14 +9,11 @@ public class Testing {
     public Testing() {
     }
 
-
     public boolean compare(int a, int b) {
         return !(a < b);
     }
 
     public int sum(int a, int b) {
-
-
 
         return a + b;
     }

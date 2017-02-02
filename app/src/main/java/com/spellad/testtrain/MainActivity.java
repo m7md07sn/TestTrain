@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
         RequestQueue queue = Volley.newRequestQueue(this);
         String url ="http://www.google.com";
-
-        ;
 // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -29,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(String response) {
                         TextView mTextView = (TextView) findViewById(R.id.mTextView);
                         // Display the first 500 characters of the response string.
-                        mTextView.setText("Response is: "+ response);
+                        mTextView.setText(response);
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 TextView mTextView = (TextView) findViewById(R.id.mTextView);
-                mTextView.setText("That didn't work!");
+                mTextView.setText(error.toString());
             }
         });
 // Add the request to the RequestQueue.
